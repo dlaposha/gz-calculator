@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -22,7 +21,7 @@ html
         }
        
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             background-color: white;
             border-radius: 15px;
@@ -49,79 +48,88 @@ html
         }
        
         h1 {
-            font-size: 28px;
+            font-size: 30px;
             margin-bottom: 10px;
             font-weight: 700;
         }
        
         .subtitle {
-            font-size: 16px;
+            font-size: 18px;
             opacity: 0.95;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
        
         .contact-info {
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 25px;
         }
        
         .phone-number {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 600;
             color: white;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             text-decoration: none;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s;
         }
        
         .phone-number:hover {
-            opacity: 0.9;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
         }
        
         .phone-number::before {
             content: "📞";
-            font-size: 20px;
+            font-size: 24px;
         }
        
         .qr-container {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 20px;
             background: rgba(255, 255, 255, 0.15);
-            padding: 10px 15px;
-            border-radius: 8px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 10px;
         }
        
         .qr-code {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             background: white;
-            padding: 5px;
-            border-radius: 5px;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
        
         .qr-text {
-            font-size: 14px;
+            font-size: 16px;
             color: white;
-            max-width: 150px;
+            max-width: 180px;
+            font-weight: 500;
+            line-height: 1.4;
         }
        
         .content {
-            padding: 30px;
+            padding: 35px;
         }
        
         .calculator-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            gap: 35px;
         }
        
         @media (max-width: 900px) {
@@ -139,28 +147,28 @@ html
        
         .section-title {
             color: #0057b8;
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 20px;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
             border-bottom: 2px solid #e2e8f0;
-            font-weight: 600;
+            font-weight: 700;
         }
        
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
        
         label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: 600;
             color: #2d3748;
-            font-size: 15px;
+            font-size: 16px;
         }
        
         select, input[type="number"] {
             width: 100%;
-            padding: 12px 15px;
+            padding: 14px 16px;
             border: 2px solid #cbd5e0;
             border-radius: 8px;
             font-size: 16px;
@@ -174,23 +182,59 @@ html
             box-shadow: 0 0 0 3px rgba(0, 87, 184, 0.1);
         }
        
+        select[disabled], input[disabled] {
+            background-color: #f1f5f9;
+            border-color: #cbd5e0;
+            color: #64748b;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+       
+        .premium-info-box {
+            background: #f0f9ff;
+            border: 2px solid #bae6fd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+       
+        .premium-info-title {
+            color: #0369a1;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+       
+        .premium-info-value {
+            color: #0c4a6e;
+            font-size: 18px;
+            font-weight: 700;
+        }
+       
+        .premium-info-description {
+            color: #475569;
+            font-size: 14px;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+       
         .btn-calculate {
             width: 100%;
             background: linear-gradient(135deg, #0057b8 0%, #004494 100%);
             color: white;
             border: none;
-            padding: 18px;
-            font-size: 18px;
+            padding: 20px;
+            font-size: 20px;
             font-weight: 700;
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s;
-            margin-top: 10px;
+            margin-top: 15px;
         }
        
         .btn-calculate:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 87, 184, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 87, 184, 0.4);
         }
        
         .btn-calculate:active {
@@ -200,20 +244,20 @@ html
         .combat-section {
             background-color: #fff8e1;
             border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #ffd700;
+            padding: 22px;
+            margin: 22px 0;
+            border-left: 5px solid #ffd700;
         }
        
         .combat-section h4 {
             color: #b45309;
-            margin-bottom: 15px;
-            font-size: 16px;
+            margin-bottom: 16px;
+            font-size: 17px;
         }
        
         .category-option {
-            margin-bottom: 10px;
-            padding: 12px;
+            margin-bottom: 12px;
+            padding: 14px;
             background-color: white;
             border-radius: 8px;
             cursor: pointer;
@@ -224,30 +268,32 @@ html
         .category-option:hover {
             border-color: #0057b8;
             background-color: #f0f7ff;
+            transform: translateX(5px);
         }
        
         .category-option.active {
             border-color: #0057b8;
             background-color: #e6f2ff;
+            box-shadow: 0 3px 10px rgba(0, 87, 184, 0.1);
         }
        
         .category-title {
             font-weight: 600;
             color: #0057b8;
-            margin-bottom: 5px;
-            font-size: 14px;
+            margin-bottom: 6px;
+            font-size: 15px;
         }
        
         .category-description {
-            font-size: 13px;
+            font-size: 14px;
             color: #666;
         }
        
         .results-section {
             background-color: #f0f7ff;
             border-radius: 12px;
-            padding: 30px;
-            margin-top: 30px;
+            padding: 35px;
+            margin-top: 35px;
             border: 2px solid #b8d4f0;
             display: none;
         }
@@ -264,25 +310,31 @@ html
        
         .results-title {
             color: #0057b8;
-            font-size: 24px;
-            margin-bottom: 25px;
+            font-size: 28px;
+            margin-bottom: 30px;
             text-align: center;
             font-weight: 700;
         }
        
         .results-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-bottom: 30px;
         }
        
         .result-card {
             background-color: white;
             border-radius: 10px;
-            padding: 20px;
+            padding: 22px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
             border-top: 4px solid #0057b8;
+            transition: all 0.3s;
+        }
+       
+        .result-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         }
        
         .result-card.total {
@@ -291,67 +343,68 @@ html
         }
        
         .result-label {
-            font-size: 14px;
+            font-size: 15px;
             color: #4a5568;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: 500;
         }
        
         .result-value {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: 700;
             color: #0057b8;
         }
        
         .result-card.total .result-value {
             color: #d4a017;
-            font-size: 32px;
+            font-size: 36px;
         }
        
         .note-box {
             background-color: #fff8e1;
             border-radius: 10px;
-            padding: 20px;
-            margin-top: 25px;
+            padding: 25px;
+            margin-top: 30px;
             border-left: 5px solid #ffd700;
         }
        
         .note-title {
             color: #b45309;
             font-weight: 700;
-            margin-bottom: 12px;
-            font-size: 16px;
+            margin-bottom: 15px;
+            font-size: 18px;
         }
        
         .note-content {
             color: #78350f;
-            line-height: 1.6;
-            font-size: 14px;
+            line-height: 1.7;
+            font-size: 15px;
         }
        
         .year-comparison {
             background-color: #f8fafc;
             border-radius: 10px;
             padding: 25px;
-            margin-top: 30px;
+            margin-top: 35px;
             border: 1px solid #e2e8f0;
         }
        
         .year-comparison h3 {
             color: #0057b8;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             text-align: center;
+            font-size: 22px;
         }
        
         .years-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 18px;
         }
        
         .year-item {
             background: white;
-            padding: 15px;
+            padding: 18px;
             border-radius: 8px;
             text-align: center;
             border: 1px solid #e2e8f0;
@@ -361,44 +414,70 @@ html
        
         .year-item:hover {
             border-color: #0057b8;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 87, 184, 0.1);
         }
        
         .year-item.active {
             background-color: #e6f2ff;
             border-color: #0057b8;
+            box-shadow: 0 3px 10px rgba(0, 87, 184, 0.15);
         }
        
         .year-label {
             font-weight: 600;
             color: #2d3748;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
+            font-size: 16px;
         }
        
         .year-amount {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             color: #0057b8;
         }
        
         footer {
             text-align: center;
-            margin-top: 30px;
-            padding: 20px;
+            margin-top: 35px;
+            padding: 25px;
             border-top: 1px solid #e2e8f0;
-            font-size: 14px;
+            font-size: 15px;
             color: #718096;
         }
        
         .flag {
             display: inline-block;
-            width: 24px;
-            height: 16px;
+            width: 28px;
+            height: 18px;
             background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
-            margin: 0 8px;
+            margin: 0 10px;
             vertical-align: middle;
             border-radius: 2px;
+        }
+        
+        .info-tooltip {
+            position: relative;
+            display: inline-block;
+            margin-left: 8px;
+            color: #0057b8;
+            cursor: help;
+        }
+        
+        .info-tooltip:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0057b8;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 250px;
+            z-index: 100;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -414,10 +493,11 @@ html
                 <a href="tel:0682347574" class="phone-number">068 234 75 74</a>
                
                 <div class="qr-container">
-                    <!-- Працюючий QR-код для контакту -->
-                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3A%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE%20%D0%9B%D0%B0%D0%BF%D0%BE%D1%88%D0%B0%0ATEL%3A0952347574%0ATEL%3A0932347574%0ATEL%3A0682347574%0AORG%3A%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%0ATITLE%3A%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%0AEND%3AVCARD" alt="QR код контактів адвоката Лапоша Д.Ю." />
+                    <!-- QR-код з правильним email -->
+                    <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3A%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE%20%D0%9B%D0%B0%D0%BF%D0%BE%D1%88%D0%B0%0ATEL%3A0952347574%0ATEL%3A0932347574%0ATEL%3A0682347574%0AEMAIL%3Ad.laposha%40gmail.com%0AORG%3A%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%0ATITLE%3A%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%0ANOTE%3A%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%20%D0%B7%D0%B0%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D0%BC%D0%B8%20%D0%B2%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%BE%D0%B2%D1%86%D1%96%D0%B2%0AURL%3Ahttps%3A%2F%2Fdlaposha.github.io%2Fgz-calculator%2F%0AEND%3AVCARD" 
+                         alt="QR код контактів адвоката Лапоші Д.Ю." />
                     <div class="qr-text">
-                        Відскануйте для збереження контактів адвоката Лапоша Д.Ю.
+                        Відскануйте QR-код для збереження контактів адвоката Лапоші Д.Ю. у телефоні
                     </div>
                 </div>
             </div>
@@ -437,7 +517,7 @@ html
                             <option value="2023">2023</option>
                             <option value="2024">2024</option>
                             <option value="2025">2025</option>
-                            <option value="2026" selected>2026</option>
+                            <option value="2026">2026</option>
                         </select>
                     </div>
                    
@@ -455,7 +535,7 @@ html
                             <option value="0.59">Старший майстер-сержант (0.59)</option>
                             <option value="0.60">Головний майстер-сержант (0.60)</option>
                             <option value="0.62">Молодший лейтенант (0.62)</option>
-                            <option value="0.64" selected>Лейтенант (0.64)</option>
+                            <option value="0.64">Лейтенант (0.64)</option>
                             <option value="0.68">Старший лейтенант (0.68)</option>
                             <option value="0.72">Капітан (0.72)</option>
                             <option value="0.76">Майор (0.76)</option>
@@ -497,15 +577,25 @@ html
                    
                     <div class="form-group">
                         <label for="premiumCoefficient">Коефіцієнт премії (% від ПО):</label>
-                        <select id="premiumCoefficient">
-                            <!-- Заповниться JavaScript -->
+                        <!-- Тільки для форми, але неактивне -->
+                        <select id="premiumCoefficient" disabled style="display: none;">
+                            <option value="0">Автоматичний розрахунок</option>
                         </select>
+                        
+                        <!-- Інформаційний блок замість активного поля -->
+                        <div class="premium-info-box" id="premiumInfoBox">
+                            <div class="premium-info-title">Поточний коефіцієнт премії:</div>
+                            <div class="premium-info-value" id="premiumValue">0%</div>
+                            <div class="premium-info-description" id="premiumDescription">
+                                Автоматично розраховується на основі тарифного розряду та стажу служби
+                            </div>
+                        </div>
                     </div>
                    
                     <div class="form-group">
                         <label for="qualification">Кваліфікаційна категорія:</label>
                         <select id="qualification">
-                            <option value="0" selected>Без категорії</option>
+                            <option value="0" >Без категорії</option>
                             <option value="300">3-тя категорія (+300 грн)</option>
                             <option value="600">2-га категорія (+600 грн)</option>
                             <option value="900">1-ша категорія (+900 грн)</option>
@@ -516,6 +606,7 @@ html
                         <h4>Бойові виплати:</h4>
                         <div class="category-option active" data-value="0">
                             <div class="category-title">Без бойових виплат</div>
+                            <div class="category-description">Звичайний розрахунок без бойових</div>
                         </div>
                         <div class="category-option" data-value="30000">
                             <div class="category-title">30,000 грн/міс</div>
@@ -534,6 +625,9 @@ html
                     <div class="form-group">
                         <label for="combatDays">Днів у бойових діях (за місяць):</label>
                         <input type="number" id="combatDays" min="0" max="31" value="0">
+                        <div style="margin-top: 8px; font-size: 14px; color: #666;">
+                            Для пропорційного розрахунку бойових виплат
+                        </div>
                     </div>
                    
                     <button class="btn-calculate" id="calculateBtn">РОЗРАХУВАТИ ГРОШОВЕ ЗАБЕЗПЕЧЕННЯ</button>
@@ -552,6 +646,9 @@ html
                     <div class="years-grid" id="yearsComparison">
                         <!-- Порожнє місце для динамічного заповнення -->
                     </div>
+                    <div style="margin-top: 15px; font-size: 14px; color: #666; text-align: center;">
+                        Натисніть на рік для детального розрахунку
+                    </div>
                 </div>
                
                 <div class="note-box">
@@ -565,6 +662,7 @@ html
                         • Від 20 до 25 років: 45% від (ПО + ОВЗ)<br>
                         • Від 25 і більше років: 50% від (ПО + ОВЗ)</p>
                         <p style="margin-top: 15px;"><strong>ПМПО на 01.01.2026:</strong> 3,328 грн (згідно з законодавством України)</p>
+                        <p style="margin-top: 10px;"><strong>Коефіцієнт премії:</strong> Автоматично встановлюється відповідно до тарифного розряду та стажу служби. Для стажу менше 1 року - мінімальний коефіцієнт (210%), для стажу понад 1 рік - максимальний відповідно до розряду.</p>
                         <p style="margin-top: 10px;">Цей калькулятор надає орієнтовні розрахунки. Точну інформацію уточнюйте у фінансовому органі вашої військової частини.</p>
                     </div>
                 </div>
@@ -572,7 +670,7 @@ html
         </div>
        
         <footer>
-            <p>Адвокат Дмитро Лапоша | Грошовий забезпечення ЗСУ <span class="flag"></span> Захищаємо права військовослужбовців</p>
+            <p>Адвокат Дмитро Лапоша | Розрахунок грошового забезпечення ЗСУ <span class="flag"></span> Захищаємо права військовослужбовців</p>
             <p style="margin-top: 8px; font-size: 13px; color: #a0aec0;">© 2020-2026 Калькулятор розроблено для юридичної допомоги військовослужбовцям</p>
         </footer>
     </div>
@@ -588,7 +686,7 @@ html
             "2026": 3328
         };
        
-        // Тарифні коефіцієнти (розряди 1-60) - виправлені дані
+        // Тарифні коефіцієнти (розряди 1-60)
         const tariffCoefficients = {
             1: 1.4, 2: 1.45, 3: 1.5, 4: 1.55, 5: 1.6, 6: 1.65, 7: 1.7, 8: 1.75, 9: 1.8, 10: 1.85,
             11: 1.9, 12: 1.95, 13: 2, 14: 2.08, 15: 2.16, 16: 2.24, 17: 2.32, 18: 2.4, 19: 2.48, 20: 2.56,
@@ -598,7 +696,7 @@ html
             51: 5.04, 52: 5.12, 53: 5.2, 54: 5.28, 55: 5.36, 56: 5.44, 57: 5.52, 58: 5.6, 59: 5.68, 60: 5.76
         };
        
-        // Премії за тарифними розрядами
+        // Премії за тарифними розрядами ЗА ТАБЛИЦЕЮ
         const tariffPremiums = {
             1: { min: 2.1, max: 6.33 },
             2: { min: 2.1, max: 6.03 },
@@ -656,6 +754,8 @@ html
         const tariffCategorySelect = document.getElementById('tariffCategory');
         const specialConditionSelect = document.getElementById('specialCondition');
         const premiumCoefficientSelect = document.getElementById('premiumCoefficient');
+        const premiumValue = document.getElementById('premiumValue');
+        const premiumDescription = document.getElementById('premiumDescription');
         const qualificationSelect = document.getElementById('qualification');
         const combatDaysInput = document.getElementById('combatDays');
         const calculateBtn = document.getElementById('calculateBtn');
@@ -670,46 +770,36 @@ html
             let options = '';
             for (let i = 1; i <= 60; i++) {
                 const premiumData = tariffPremiums[i] || defaultPremium;
-                const premiumText = i <= 20 ? ` (премія: ${premiumData.max}×)` : ` (премія: ${defaultPremium.max}×)`;
+                const premiumText = i <= 20 
+                    ? ` (премія: ${premiumData.max.toFixed(2)}×)` 
+                    : ` (премія: ${defaultPremium.max.toFixed(2)}×)`;
                 options += `<option value="${i}">${i} розряд${premiumText}</option>`;
             }
             tariffCategorySelect.innerHTML = options;
             tariffCategorySelect.value = 12; // Типовий розряд для лейтенанта
         }
        
-        // Оновлення доступних премій при зміні тарифного розряду
-        function updatePremiumsForTariff() {
+        // Оновлення відображення премії
+        function updatePremiumDisplay() {
             const tariffCategory = parseInt(tariffCategorySelect.value);
             const experience = parseInt(experienceInput.value) || 0;
            
             // Отримуємо дані про премії для поточного розряду
             const premiumData = tariffPremiums[tariffCategory] || defaultPremium;
            
-            // Визначаємо максимальну премію (з вислугою або без)
-            const maxPremium = experience > 1 ? premiumData.max : premiumData.min;
-           
-            // Оновлюємо опції премій
-            const premiumOptions = [
-                { value: 2.1, text: "210% (мінімум)" },
-                { value: 2.5, text: "250%" },
-                { value: 3.0, text: "300%" },
-                { value: 3.5, text: "350%" },
-                { value: 4.0, text: "400%" },
-                { value: 4.8, text: "480%" },
-                { value: maxPremium, text: `${(maxPremium * 100).toFixed(0)}% (максимум)` }
-            ];
-           
-            // Сортуємо за значенням
-            premiumOptions.sort((a, b) => a.value - b.value);
-           
-            // Оновлюємо select
-            let premiumOptionsHTML = '';
-            premiumOptions.forEach(option => {
-                const selected = option.value === 4.8 ? 'selected' : '';
-                premiumOptionsHTML += `<option value="${option.value}" ${selected}>${option.text}</option>`;
-            });
-           
-            premiumCoefficientSelect.innerHTML = premiumOptionsHTML;
+            // Визначаємо коефіцієнт премії
+            const premiumCoefficient = experience < 1 ? premiumData.min : premiumData.max;
+            
+            // Оновлюємо інформаційний блок
+            premiumValue.textContent = `${(premiumCoefficient * 100).toFixed(0)}% від ПО`;
+            
+            if (experience < 1) {
+                premiumDescription.textContent = `Для стажу ${experience} років - мінімальний коефіцієнт (210%)`;
+            } else {
+                premiumDescription.textContent = `Для стажу ${experience} років - максимальний коефіцієнт (${(premiumData.max * 100).toFixed(0)}%)`;
+            }
+            
+            return premiumCoefficient;
         }
        
         // Обробники бойових виплат
@@ -730,7 +820,8 @@ html
             const tariffCoefficient = tariffCoefficients[tariffCategory];
             const experience = parseInt(experienceInput.value) || 0;
             const specialConditionCoefficient = parseFloat(specialConditionSelect.value);
-            const premiumCoefficient = parseFloat(premiumCoefficientSelect.value);
+            // Автоматично встановлюємо премію
+            const premiumCoefficient = updatePremiumDisplay();
             const qualificationBonus = parseInt(qualificationSelect.value) || 0;
             const combatDays = parseInt(combatDaysInput.value) || 0;
           
@@ -789,7 +880,8 @@ html
             const tariffCoefficient = tariffCoefficients[tariffCategory];
             const experience = parseInt(experienceInput.value) || 0;
             const specialConditionCoefficient = parseFloat(specialConditionSelect.value);
-            const premiumCoefficient = parseFloat(premiumCoefficientSelect.value);
+            // Автоматично встановлюємо премію
+            const premiumCoefficient = updatePremiumDisplay();
             const qualificationBonus = parseInt(qualificationSelect.value) || 0;
             const combatDays = parseInt(combatDaysInput.value) || 0;
           
@@ -838,7 +930,7 @@ html
           
             const total = baseTotal + additionalAllowances;
           
-            displayResults(year, pmp, po, ovz, nvr, nops, premium, baseTotal, combatPayments, qualificationBonus, total, experiencePercentage, specialConditionCoefficient);
+            displayResults(year, pmp, po, ovz, nvr, nops, premium, baseTotal, combatPayments, qualificationBonus, total, experiencePercentage, specialConditionCoefficient, premiumCoefficient);
           
             // Розрахунок порівняння за роками
             calculateYearComparison();
@@ -848,7 +940,9 @@ html
         }
       
         // Відображення результатів
-        function displayResults(year, pmp, po, ovz, nvr, nops, premium, baseTotal, combatPayments, qualificationBonus, total, expPerc, specCoef) {
+        function displayResults(year, pmp, po, ovz, nvr, nops, premium, baseTotal, combatPayments, qualificationBonus, total, expPerc, specCoef, premiumCoefficient) {
+            const experience = parseInt(experienceInput.value) || 0;
+            
             resultsGrid.innerHTML = `
                 <div class="result-card">
                     <div class="result-label">Рік розрахунку</div>
@@ -875,8 +969,11 @@ html
                     <div class="result-value">${formatNumber(nops, 2)} грн</div>
                 </div>
                 <div class="result-card">
-                    <div class="result-label">Премія</div>
+                    <div class="result-label">Премія (${(premiumCoefficient * 100).toFixed(0)}% від ПО)</div>
                     <div class="result-value">${formatNumber(premium, 2)} грн</div>
+                    <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                        ${experience < 1 ? 'Стаж менше 1 року' : 'Стаж понад 1 рік'}
+                    </div>
                 </div>
                 <div class="result-card">
                     <div class="result-label">Базове ГЗ</div>
@@ -904,15 +1001,36 @@ html
             let comparisonHTML = '';
             const years = ['2020', '2021', '2022', '2023', '2024', '2025', '2026'];
             const currentYear = yearSelect.value;
+            const currentExperience = parseInt(experienceInput.value) || 0;
            
             years.forEach(year => {
+                // Для порівняння враховуємо зміну стажу (припускаємо +1 рік на кожний рік)
+                const yearDiff = parseInt(year) - parseInt(currentYear);
+                const experienceForYear = Math.max(0, currentExperience + yearDiff);
+                
+                // Зберігаємо оригінальний стан
+                const originalExperience = experienceInput.value;
+                experienceInput.value = experienceForYear;
+                
+                // Оновлюємо премію для цього року
+                const premiumCoefficient = updatePremiumDisplay();
+                
+                // Розраховуємо забезпечення
                 const totalForYear = calculateForYear(year);
+                
+                // Повертаємо оригінальні значення
+                experienceInput.value = originalExperience;
+                updatePremiumDisplay();
+                
                 const isActive = year === currentYear;
                
                 comparisonHTML += `
                     <div class="year-item ${isActive ? 'active' : ''}" data-year="${year}">
                         <div class="year-label">${year} рік</div>
                         <div class="year-amount">${formatNumber(totalForYear, 0)} грн</div>
+                        <div style="font-size: 12px; color: #666; margin-top: 4px;">
+                            стаж: ${experienceForYear} р.
+                        </div>
                     </div>
                 `;
             });
@@ -932,36 +1050,36 @@ html
         // Ініціалізація
         document.addEventListener('DOMContentLoaded', function() {
             populateTariffCategories();
-            updatePremiumsForTariff();
+            updatePremiumDisplay();
            
             // Автоматичний розрахунок при завантаженні
             calculateAllowance();
            
             calculateBtn.addEventListener('click', calculateAllowance);
            
+            // Обробники змін для параметрів
             [yearSelect, rankSelect, tariffCategorySelect, specialConditionSelect, 
              qualificationSelect, combatDaysInput].forEach(input => {
-                input.addEventListener('change', calculateAllowance);
+                input.addEventListener('change', function() {
+                    // Оновлюємо премію при зміні тарифного розряду або стажу
+                    if (input.id === 'tariffCategory' || input.id === 'experience') {
+                        updatePremiumDisplay();
+                    }
+                    calculateAllowance();
+                });
             });
            
-            // Особливі обробники
-            experienceInput.addEventListener('change', function() {
-                updatePremiumsForTariff();
-                calculateAllowance();
-            });
-           
-            tariffCategorySelect.addEventListener('change', function() {
-                updatePremiumsForTariff();
-                calculateAllowance();
-            });
-           
-            premiumCoefficientSelect.addEventListener('change', calculateAllowance);
-            
             // Обробник для бойових днів
             combatDaysInput.addEventListener('input', function() {
                 const days = parseInt(this.value);
                 if (days > 31) this.value = 31;
                 if (days < 0) this.value = 0;
+                calculateAllowance();
+            });
+            
+            // Обробник для клавіш (стаж)
+            experienceInput.addEventListener('keyup', function() {
+                updatePremiumDisplay();
                 calculateAllowance();
             });
         });
